@@ -7,18 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--<Viewbox>
-            <Border Height="768" Width="1024">
-                <StackPanel>
-                    <local:CheckCode Width="200" Height="100"/>
-                    <local:CheckCode Width="200" Height="200"/>
-                </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="305*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
+        <Viewbox Grid.ColumnSpan="3">
+            <Border BorderBrush="Blue" BorderThickness="3" CornerRadius="20" Height="768" Width="1024">
+                <local:CheckCode Width="200" Height="100"/>
             </Border>
-        </Viewbox>-->
+        </Viewbox>
 
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!--<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <local:CheckCode Width="200" Height="60"/>
             <local:CheckCode Width="200" Height="60"/>
-        </StackPanel>
+        </StackPanel>-->
     </Grid>
 </Window>

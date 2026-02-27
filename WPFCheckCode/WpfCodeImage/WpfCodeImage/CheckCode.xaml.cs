@@ -38,36 +38,44 @@ namespace WpfCodeImage
 
         private void CheckCode_Loaded(object sender, RoutedEventArgs e)
         {
-            ImageSource = CreateCheckCodeImage(CreateCode(4), (int)this.Width, (int)this.Height);
+            try
+            {
+                ImageSource = CreateCheckCodeImage(CreateCode(4), (int)this.Width, (int)this.Height);
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                ImageSource = CreateCheckCodeImage(CreateCode(4), (int)this.Width, (int)this.Height);
+            }
+
         }
 
+        //复用Random对象，避免重复new
+        private static readonly Random _rand = new Random();
         private static string CreateCode(int strLength)
         {
-            var strCode = "abcdefhkmnprstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789"; ;
+            var strCode = "abcdefhkmnprstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+            if (strLength <= 0 || strLength > strCode.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(strLength), "请求生成的验证码个数不合法！");
+            }
+
             var _charArray = strCode.ToCharArray();
             var randomCode = "";
-            int temp = -1;
-            Random rand = new Random(Guid.NewGuid().GetHashCode());
+
             for (int i = 0; i < strLength; i++)
             {
-                if (temp != -1)
-                {
-                    rand = new Random(i * temp * ((int)DateTime.Now.Ticks));
-                }
-                int t = rand.Next(strCode.Length - 1);
+                int t = _rand.Next(strCode.Length);
+
+                //去除掉重复的字符，保证验证码的唯一性
                 if (!string.IsNullOrWhiteSpace(randomCode))
                 {
-                    while (randomCode.ToLower().Contains(_charArray[t].ToString().ToLower()))
+                    while (randomCode.IndexOf(_charArray[t].ToString(), StringComparison.OrdinalIgnoreCase) >= 0)
                     {
-                        t = rand.Next(strCode.Length - 1);
+                        t = _rand.Next(strCode.Length);
                     }
                 }
-                if (temp == t)
-                {
-                    return CreateCode(strLength);
-                }
-                temp = t;
-
                 randomCode += _charArray[t];
             }
             return randomCode;
