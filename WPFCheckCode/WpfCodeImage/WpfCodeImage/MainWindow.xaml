@@ -7,10 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Viewbox>
+        <!--<Viewbox>
             <Border Height="768" Width="1024">
-                <local:CheckCode Width="200" Height="60"/>
+                <StackPanel>
+                    <local:CheckCode Width="200" Height="100"/>
+                    <local:CheckCode Width="200" Height="200"/>
+                </StackPanel>
             </Border>
-        </Viewbox>
+        </Viewbox>-->
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <local:CheckCode Width="200" Height="60"/>
+            <local:CheckCode Width="200" Height="60"/>
+        </StackPanel>
     </Grid>
 </Window>

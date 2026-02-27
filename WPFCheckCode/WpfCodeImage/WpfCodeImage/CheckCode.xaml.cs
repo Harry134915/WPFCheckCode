@@ -43,7 +43,7 @@ namespace WpfCodeImage
 
         private static string CreateCode(int strLength)
         {
-            var strCode  = "abcdefhkmnprstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789"; ;
+            var strCode = "abcdefhkmnprstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789"; ;
             var _charArray = strCode.ToCharArray();
             var randomCode = "";
             int temp = -1;
