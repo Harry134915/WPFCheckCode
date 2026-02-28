@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\",
+  "WorkspaceRootPath": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\checkcode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\checkcode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\checkcode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|d:\\csharp\\wpfcheckcode\\wpfcheckcode\\wpfcodeimage\\wpfcodeimage\\checkcode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\checkcode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|d:\\workspace\\wpfcheckcode\\wpfcheckcode\\wpfcodeimage\\wpfcodeimage\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\checkcode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\checkcode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\wpfcodeimage\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6068D6D5-1ACB-49C7-B8D0-F26B6C86D0D8}|WpfCodeImage\\WpfCodeImage.csproj|solutionrelative:wpfcodeimage\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,19 +34,19 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\App.xaml.cs",
+              "DocumentMoniker": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\App.xaml.cs",
               "RelativeDocumentMoniker": "WpfCodeImage\\App.xaml.cs",
-              "ToolTip": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\App.xaml.cs",
+              "ToolTip": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\App.xaml.cs",
               "RelativeToolTip": "WpfCodeImage\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -57,22 +57,34 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CheckCode.xaml.cs",
-              "DocumentMoniker": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml.cs",
+              "DocumentMoniker": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml.cs",
               "RelativeDocumentMoniker": "WpfCodeImage\\CheckCode.xaml.cs",
-              "ToolTip": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml.cs",
+              "ToolTip": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml.cs",
               "RelativeToolTip": "WpfCodeImage\\CheckCode.xaml.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAuwIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIgAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T08:49:51.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "CheckCode.xaml",
+              "DocumentMoniker": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml",
+              "RelativeDocumentMoniker": "WpfCodeImage\\CheckCode.xaml",
+              "ToolTip": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml",
+              "RelativeToolTip": "WpfCodeImage\\CheckCode.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-26T08:59:33.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfCodeImage\\MainWindow.xaml",
-              "ToolTip": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml",
+              "ToolTip": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml",
               "RelativeToolTip": "WpfCodeImage\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-26T08:50:07.523Z",
@@ -80,27 +92,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfCodeImage\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\workspace\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfCodeImage\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T08:50:03.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CheckCode.xaml",
-              "DocumentMoniker": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml",
-              "RelativeDocumentMoniker": "WpfCodeImage\\CheckCode.xaml",
-              "ToolTip": "D:\\Csharp\\WPFCheckCode\\WPFCheckCode\\WpfCodeImage\\WpfCodeImage\\CheckCode.xaml",
-              "RelativeToolTip": "WpfCodeImage\\CheckCode.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-26T08:59:33.2Z",
               "EditorCaption": ""
             }
           ]

@@ -40,13 +40,13 @@ namespace WpfCodeImage
         {
             try
             {
-                ImageSource = CreateCheckCodeImage(CreateCode(4), (int)this.Width, (int)this.Height);
+                RefreshCode();
             }
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
 
-                ImageSource = CreateCheckCodeImage(CreateCode(4), (int)this.Width, (int)this.Height);
+                RefreshCode();
             }
 
         }
@@ -88,50 +88,75 @@ namespace WpfCodeImage
                 return null;
             DrawingVisual drawingVisual = new DrawingVisual();
 
-            Random random = new Random(Guid.NewGuid().GetHashCode());
+            //Random random = new Random(Guid.NewGuid().GetHashCode());
 
             using (DrawingContext dc = drawingVisual.RenderOpen())
             {
-                dc.DrawRectangle(Brushes.White, new Pen(Brushes.Silver, 1D), new Rect(new Size(70, 23)));
+                //1.外边框使用width和height
+                dc.DrawRectangle(Brushes.White, new Pen(Brushes.Silver, 1D), new Rect(new Size(width, height)));
+
+                //2.字体大小根据图片高度来设置，保证字体占满图片
+                double fontSize = height * 0.6;
+
                 FormattedText formattedText = new FormattedText(checkCode,
                     System.Globalization.CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
                     new Typeface(new FontFamily("Arial"), FontStyles.Oblique, FontWeights.Bold, FontStretches.Normal),
-                    20.001D, new LinearGradientBrush(Colors.Green, Colors.DarkRed, 1.2D))
+                    fontSize, new LinearGradientBrush(Colors.Green, Colors.DarkRed, 1.2D))
                 {
                     MaxLineCount = 1,
                     TextAlignment = TextAlignment.Justify,
                     Trimming = TextTrimming.CharacterEllipsis
                 };
 
-                dc.DrawText(formattedText, new Point(3D, 0.1D));
+                //3.文字居中
+                double textWidth = formattedText.WidthIncludingTrailingWhitespace;
+                double textHeight = formattedText.Height;
 
-                for (int i = 0; i < 10; i++)
+                double X = (width - textWidth) / 2;
+                double Y = (height - textHeight) / 2;
+
+                dc.DrawText(formattedText, new Point(X, Y));
+
+                //4.干扰线
+                int lineCount = width / 20;
+                Pen linePen = new Pen(Brushes.Silver, 0.5D);
+
+                for (int i = 0; i < lineCount; i++)
                 {
-                    int x1 = random.Next(width - 1);
-                    int y1 = random.Next(height - 1);
-                    int x2 = random.Next(width - 1);
-                    int y2 = random.Next(height - 1);
-
-                    dc.DrawGeometry(Brushes.Silver, new Pen(Brushes.Silver, 0.5D), new LineGeometry(new Point(x1, y1), new Point(x2, y2)));
+                    dc.DrawLine(linePen, new Point(_rand.Next(width), _rand.Next(height)), new Point(_rand.Next(width), _rand.Next(height)));
                 }
 
-                for (int i = 0; i < 100; i++)
+                //5.干扰点
+                int noiseCount = width * height / 60;
+                for (int i = 0; i < noiseCount; i++)
                 {
-                    int x = random.Next(width - 1);
-                    int y = random.Next(height - 1);
-                    SolidColorBrush c = new SolidColorBrush(Color.FromRgb((byte)random.Next(0, 255), (byte)random.Next(0, 255), (byte)random.Next(0, 255)));
-                    dc.DrawGeometry(c, new Pen(c, 1D), new LineGeometry(new Point(x - 0.5, y - 0.5), new Point(x + 0.5, y + 0.5)));
+                    byte r = (byte)_rand.Next(0, 256);
+                    byte g = (byte)_rand.Next(0, 256);
+                    byte b = (byte)_rand.Next(0, 256);
+
+                    var brush = new SolidColorBrush(Color.FromRgb(r, g, b));
+                    Pen noisePen = new Pen(brush, 1D);
+
+                    int px = _rand.Next(width);
+                    int py = _rand.Next(height);
+
+                    dc.DrawLine(noisePen, new Point(px, py), new Point(px + 1, py + 1));
                 }
 
-                dc.Close();
             }
 
-            RenderTargetBitmap renderBitmap = new RenderTargetBitmap(70, 23, 96, 96, PixelFormats.Pbgra32);
+            //6.将DrawingVisual转换成BitmapSource
+            RenderTargetBitmap renderBitmap = new RenderTargetBitmap(width, height, 96, 96, PixelFormats.Pbgra32);
             renderBitmap.Render(drawingVisual);
             return BitmapFrame.Create(renderBitmap);
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            RefreshCode();
+        }
+
+        private void RefreshCode()
         {
             ImageSource = CreateCheckCodeImage(CreateCode(4), (int)this.Width, (int)this.Height);
         }

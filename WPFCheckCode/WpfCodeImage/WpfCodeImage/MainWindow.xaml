@@ -8,19 +8,18 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="74*"/>
-            <ColumnDefinition Width="305*"/>
-            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
-        <Viewbox Grid.ColumnSpan="3">
+        <!--<Viewbox Grid.ColumnSpan="3">
             <Border BorderBrush="Blue" BorderThickness="3" CornerRadius="20" Height="768" Width="1024">
                 <local:CheckCode Width="200" Height="100"/>
             </Border>
-        </Viewbox>
+        </Viewbox>-->
 
-        <!--<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <local:CheckCode Width="200" Height="60"/>
-            <local:CheckCode Width="200" Height="60"/>
-        </StackPanel>-->
+        <StackPanel Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <local:CheckCode Width="100" Height="50"/>
+        </StackPanel>
     </Grid>
 </Window>
