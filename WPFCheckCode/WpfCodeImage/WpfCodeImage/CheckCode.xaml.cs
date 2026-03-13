@@ -20,7 +20,7 @@ namespace WpfCodeImage
     public partial class CheckCode : UserControl
     {
         public static readonly DependencyProperty ImageSourceProperty = DependencyProperty.Register("ImageSource", typeof(ImageSource), typeof(CheckCode),
-            new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.Journal | FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
+            new FrameworkPropertyMetadata(null));
         /// <summary>
         /// 随机生成的验证码
         /// </summary>
